@@ -46,7 +46,7 @@
     var list = products.filter(function (p) { return filter === "all" || p.cats.indexOf(filter) > -1; });
     grid.innerHTML = list.map(function (p, i) {
       return '<button class="card" type="button" data-id="' + p.id + '" style="animation-delay:' + (i * 0.05) + 's">' +
-        '<div class="card-img"><img src="images/products/' + p.img + '" alt="' + p.colour + ' ' + p.name + '" loading="lazy" width="957" height="1186">' +
+        '<div class="card-img"><img src="images/products/' + p.img + '" alt="' + p.colour + ' ' + p.name + '" loading="lazy" width="1200" height="900">' +
         '<span class="tag">' + catLabel[p.cats[0]] + '</span><span class="view">View details</span></div>' +
         '<div class="card-meta"><h3>' + p.name + '</h3><span class="price">' + rand(p.price) + '</span></div>' +
         '<p class="card-sub">' + p.colour + ' · any colour available</p>' +
